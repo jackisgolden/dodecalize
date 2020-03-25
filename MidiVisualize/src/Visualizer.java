@@ -60,8 +60,11 @@ public class Visualizer extends PApplet {
 
 	public void noteTrigger(int key, int channel, Boolean state) {
 		int color = (int) map(key, 0, 127, 0, 255);
+		
+		int grayScale = (int)(255.0 / (1.0 + Math.pow(Math.E, -1.0 * (color - 220.0 / 2.0) / 14.0)));
+		
 		if (state) {
-			Note test = new Note(this, color, key);
+			Note test = new Note(this, grayScale, key);
 			Notes.add(test);
 		}
 	}
