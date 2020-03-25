@@ -5,7 +5,7 @@ public class Note {
 
 	static final double PI = 3.14159265;
 	private int note, color;
-	float r, x, y; // represents position in z direction
+	float r, x, y; // represents position in z direction 
 
 	long creationTime = System.nanoTime();
 
