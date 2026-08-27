@@ -1,4 +1,3 @@
-
 import javax.sound.midi.*;
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
@@ -18,8 +17,13 @@ import be.tarsos.dsp.pitch.PitchDetectionResult;
 import be.tarsos.dsp.pitch.PitchProcessor;
 import be.tarsos.dsp.pitch.PitchProcessor.PitchEstimationAlgorithm;
 
-//import java.util.ArrayList;
 
+/**
+ * Player Class
+ * Plays the songs and r
+ * @author jackgolden
+ *
+ */
 public class Player extends Thread {
 	private File file;
 	private Visualizer RootParrent;
