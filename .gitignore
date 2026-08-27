@@ -1,0 +1,4 @@
+
+# Compiled output. The .jar files here are dependencies (Processing's core.jar,
+# TarsosDSP) and are deliberately tracked — without them this will not build.
+*.class
